@@ -14,7 +14,8 @@ const foreCast = (latitude,longitude , callback) => {
           //  const data = JSON.parse(response.body)
             callback(undefined,{
                 'Temperatur': body.current.temperature,
-                'FeelsLike': body.current.feelslike
+                'FeelsLike': body.current.feelslike,
+                'humidity': body.current.humidity
             })
         }
     })
